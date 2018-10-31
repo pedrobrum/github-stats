@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="github/github.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+	<title>Github</title>
+
+	<!-- <script type="text/javascript" src="//d3js.org/d3.v3.min.js"></script> -->
+	<script type="text/javascript" src="lib/d3.v3.min.js"></script>
+	<script type="text/javascript" src="scripts/projetos_tempo.js"></script>
+	<script type="text/javascript" src="scripts/issues_tempo.js"></script>
+	<script type="text/javascript" src="scripts/pulls_tempo.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+</head>
+<body>
+	<div class="cabecalho">
+		<div class="titulo">
+			GitHub
+		</div>
+		<div id="busca">
+			<select id="lang" class="selectpicker" data-style="btn-light" data-live-search="true">
+				<option value="">Selecione a linguagem</option>
+    		<option>JavaScript</option>
+    		<option>Python</option>
+    		<option>Ruby</option>
+    		<option>Java</option>
+    		<option>PHP</option>
+    		<option>CSS</option>
+				<option>C++</option>
+				<option>C</option>
+				<option>Shell</option>
+				<option>HTML</option>
+				<option>C#</option>
+				<option>Objective-C</option>
+				<option>Go</option>
+				<option>Perl</option>
+				<option>CoffeeScript</option>
+				<option>Scala</option>
+				<option>VimL</option>
+				<option>Haskell</option>
+				<option>Lua</option>
+				<option>R</option>
+  		</select>
+			<div id="button-busca">
+				<button class="btn btn-success" onclick="issuesPorLinguagem()">
+					Issues
+				</button>
+			</div>
+			<div id="button-busca">
+				<button class="btn btn-success" onclick="pullsPorLinguagem()">
+					Pull requests
+				</button>
+			</div>
+			<div id="button-busca">
+				<button class="btn btn-success" onclick="projetosPorAno()">
+				 Repositórios
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="chart" align="center"></div>
+</body>
+</html>
