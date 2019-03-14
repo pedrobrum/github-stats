@@ -1,5 +1,5 @@
 # Visualizando Dados do GitHub
-### Visualização de Dados - Trabalho prático 1 - 2018/2
+### Visualização de Dados - Trabalho prático - 2018/2
 #### Universidade Federal de Minas Gerais (UFMG)
 
 
